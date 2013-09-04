@@ -1,0 +1,90 @@
+#split.short {
+    height: 340px;
+}
+#split {
+    height: 410px;
+    margin: 20px 0;
+    position: relative;
+}
+
+#split.short p {
+    top: 156px;
+}
+
+#split p {
+    background: none repeat scroll 0 0 #A6ABC1;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    width: 40px;
+    z-index: 1;
+}
+
+#split #divide {
+    background: none repeat scroll 0 0 #D7D9E3;
+    bottom: 8px;
+    display: block;
+    left: 47px;
+    position: absolute;
+    top: 30px;
+    width: 2px;
+}
+
+.zocial {
+    -moz-box-sizing: border-box;
+    -moz-user-select: none;
+    border: 1px solid #B4B9C1;
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: block;
+    font-family: "proxima-nova",arial,helvetica,serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 16px;
+    outline: medium none;
+    padding: 15px 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 0 0 24px;
+}
+
+.zocial.twitter {
+    background: -moz-linear-gradient(center top , #10B8F8 0%, #18AEE7 100%) repeat scroll 0 0 #10B8F8;
+    border: 1px solid #1498C9;
+    box-shadow: 0 1px 0 #40CAFE inset;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.zocial.facebook {
+    background: -moz-linear-gradient(center top , #3F60A5 0%, #3B5998 100%) repeat scroll 0 0 #3F60A5;
+    border: 1px solid #345290;
+    box-shadow: 0 1px 0 #5073BC inset;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.zocial.google {
+    background: -moz-linear-gradient(center top , #DA4F2E 0%, #D34529 100%) repeat scroll 0 0 #DA4F2E;
+    border: 1px solid #B73420;
+    box-shadow: 0 1px 0 #EF5946 inset;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.zocial.github {
+    background: -moz-linear-gradient(center top , #3C3C3C 0%, #353535 100%) repeat scroll 0 0 #3C3C3C;
+    border: 1px solid #000000;
+    box-shadow: 0 1px 0 #585858 inset;
+    color: #FFFFFF;
+    text-shadow: none;
+}

@@ -1,0 +1,21 @@
+<template name='usersList'>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>username</th>
+                <th>fullname</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+        {{#each users}}
+            <tr>
+                <td>{{username}}</td>
+                <td>{{profile.firstname}} {{profile.lastname}}</td>
+                <td>{{emails.0.address}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+
+</template>

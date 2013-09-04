@@ -1,0 +1,64 @@
+<template name='registerForm'>
+    <div class="row">
+        <div id="account-content" class="col-md-6">
+            <h3>Create an account in seconds</h3>
+
+            <div id="alert" style="display:none" class="alert alert-danger fade in">
+                <button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+            </div>
+
+            <form id='register-form' role="form">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="account-firstname">First Name</label>
+                        <input type="text" class="form-control" id="account-firstname" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="account-lastname">Last Name</label>
+                        <input type="text" class="form-control" id="account-lastname" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label for="account-username">Username</label>
+                        <input type="text" class="form-control" id="account-username" placeholder="Username">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label for="account-email">E-Mail Address</label>
+                        <input type="email" class="form-control" id="account-email" placeholder="E-Mail Address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label for="account-password">Password</label>
+                        <input type="password" class="form-control" id="account-password" placeholder="Password">
+                    </div>
+                </div>
+
+                <button type="submit" id='create-account' class="btn btn-primary btn-block">Create an Account</button>
+            </form>
+
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-md-6">
+                    <a href="{{pathFor 'reset'}}" id='forgot-password'>forgot details?</a>
+                </div>
+                <div class="col-md-6" style="text-align: right;">
+                    <a href="{{pathFor 'login'}}" class='sign-in'>already have an account?</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="split" class="col-md-1 short">
+            <p>or</p>
+            <span id="divide"></span>
+        </div>
+
+        <div class="col-md-5" style="padding: 80px;">
+            <a class='zocial google'>Google</a>
+            <a class='zocial facebook'>Facebook</a>
+            <a class='zocial twitter'>Twitter</a>
+        </div>
+    </div>
+</template>

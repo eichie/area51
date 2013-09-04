@@ -1,0 +1,53 @@
+<template name='resetForm'>
+    <div class="row">
+        <div id="account-content" class="col-md-6">
+            {{#if resetToken}}
+            <h3>Enter New Password</h3>
+            {{else}}
+            <h3>Reset Password</h3>
+            {{/if}}
+
+            {{#if resetToken}}
+            <form role="form" id='new-password'>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label for="new-password-password">New Password</label>
+                        <input type='text' id='new-password-password' class="form-control" placeholder='New Password'/>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Change Password</button>
+            </form>
+            {{else}}
+            <form role="form" id='recovery-form'>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <label for="recovery-email">Your Email Address</label>
+                        <input type='text' id='recovery-email' class="form-control" placeholder='Your Email Address'/>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Reset Instructions</button>
+            </form>
+            {{/if}}
+
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-md-6">
+                    <a href="{{pathFor 'reset'}}" id='forgot-password'>forgot details?</a>
+                </div>
+                <div class="col-md-6" style="text-align: right;">
+                    <a href="{{pathFor 'login'}}" class='sign-in'>already have an account?</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="split" class="col-md-1 short">
+            <p>or</p>
+            <span id="divide"></span>
+        </div>
+
+        <div class="col-md-5" style="padding: 80px;">
+            <a class='zocial google'>Google</a>
+            <a class='zocial facebook'>Facebook</a>
+            <a class='zocial twitter'>Twitter</a>
+        </div>
+    </div>
+</template>

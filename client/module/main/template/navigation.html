@@ -1,0 +1,46 @@
+
+<template name="navigation">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand navbar-brand" href="{{pathFor 'home'}}">Area51</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{pathFor 'home'}}">Home</a></li>
+                    {{#if currentUser}}
+                    {{#unless loggingIn}}
+                    <li><a href="{{pathFor 'member'}}">Member</a></li>
+                    {{/unless}}
+                    {{/if}}
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    {{#if currentUser}}
+                    {{#unless loggingIn}}
+                    <li class='dropdown'>
+                        <a href='#' class='dropdown-toggle' data-toggle='dropdown'>{{displayName}}<b class='caret'></b></a>
+                        <ul class='dropdown-menu' role='dropdown' aria-labelledby='dropdownMenu' >
+                            <li><a class='logout' href='#' tabindex='-1'>Logout</a></li>
+                        </ul>
+                    </li>
+                    {{/unless}}
+                    {{else}}
+                    {{#unless loggingIn}}
+                    <li>
+                        <a href='{{pathFor 'login'}}' class='login'>Login</a>
+                    </li>
+                    {{/unless}}
+                    {{/if}}
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+</template>

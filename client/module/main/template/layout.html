@@ -1,0 +1,15 @@
+<template name="layout">
+    {{yield 'navigation'}}
+    <div class="container">
+        {{yield}}
+    </div>
+</template>
+
+
+<template name="loading">
+    <h1>Loading...</h1>
+</template>
+
+<template name="notFound">
+    <h1>Not Found!</h1>
+</template>
